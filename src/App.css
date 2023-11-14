@@ -1,38 +1,709 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*-----------------------------------------------Header--------------------------------------------------*/
+.navigation_bar {
+  display: grid;
+  grid-template-columns: 25% 51% 24%;
+  background-color: #f6f1f1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo img {
+  width: 38px;
+  height: 23px;
+}
+
+.logo h3 {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  font-family: "Lexend", sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 40px;
+}
+
+.nav-links ul li {
+  font-size: 0.938rem;
+  line-height: 4rem;
+  font-family: "Lexend", sans-serif;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+
+.btn {
+  padding: 1px 16px;
+  font-size: 0.938rem;
+  line-height: 2.375rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+}
+
+.btn:nth-child(1) {
+  background-color: #ffcd58;
+  border: 0;
+}
+
+.btn:nth-child(2) {
+  background-color: white;
+  border: 1px solid #ffcd58;
+}
+
+/*-----------------------------------------------Header--------------------------------------------------*/
+
+/*------------------------------------------First section Page--------------------------------------------*/
+
+.section_one {
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: #f8f9fa;
+  height: 75vh;
+}
+
+.nocodeapi-detail {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0px 70px 80px;
+}
+
+.about_nocodeapi {
+  width: 75%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about_nocodeapi h2 {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  letter-spacing: normal;
+}
+
+.about_nocodeapi h4 {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  font-weight: 200;
+}
+
+.about_nocodeapi button {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.938rem;
+  line-height: 2.375rem;
+  background-color: #ffcd58;
+  border: 0;
+  padding: 0 15px;
+}
+
+.about_nocodeapi h5 {
+  font-family: "Lexend", sans-serif;
+}
+
+.video-one-section img {
+  height: 300px;
+  width: 500px;
+  border: 5px solid black;
+}
+
+.trust-with-us {
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+  gap: 28px;
+  margin-top: -40px;
+}
+
+.trust-with-us h5 {
+  font-size: 0.938rem;
+  line-height: 0.938rem;
+  font-family: "Lexend", sans-serif;
+  color: #635e69;
+}
+
+/*------------------------------------------First section Page--------------------------------------------*/
+
+/*------------------------------------------Second section Page--------------------------------------------*/
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 40px 0;
+  padding: 70px 0;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.benifit {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 330px;
+  padding: 20px;
+}
+
+.head_plus_logo {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.head_plus_logo span {
+  font-size: 38px;
+}
+
+.benf-head {
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+}
+
+.benf-para {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.938rem;
+  line-height: 1.594rem;
+  font-weight: 200;
+}
+
+/*------------------------------------------Second section Page--------------------------------------------*/
+
+/*------------------------------------------Third section Page--------------------------------------------*/
+
+.how_to-work_with-it {
+  background-color: #cfe6f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 90px 0;
+}
+
+.how_to-work_with-it h1 {
+  font-family: "Lexend", sans-serif;
+}
+
+.use_nocodeapi {
+  display: grid;
+  grid-template-columns: repeat(3, 390px);
+}
+
+.way-to-use {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+
+.way-to-use img {
+  width: 350px;
+  height: 260px;
+}
+
+.way-to-use h1 {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+}
+
+.way-to-use p {
+  font-family: "Lexend", sans-serif;
+  font-size: 1rem;
+  line-height: 1.563rem;
+  font-weight: 200;
+}
+
+/*------------------------------------------Third section Page--------------------------------------------*/
+
+/*------------------------------------------Fourth section Page--------------------------------------------*/
+
+.container {
+  margin: 80px 0;
+}
+
+p {
+  margin: 0 0 1em;
+  padding: 10px;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  font-family: "Lexend", sans-serif;
+  color: black;
+}
+
+.line {
+  position: relative;
+  width: 75%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.line:after {
+  content: " ";
+  width: 2px;
+  background: #f0f0f0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+.fl {
+  float: left;
+  margin: 0 50px;
+}
+
+.fr {
+  float: right;
+  margin: 0 50px;
+}
+
+.block {
+  width: 50%;
+  position: relative;
+  padding: 0 50px 0 0;
+}
+
+.fr {
+  padding: 0 0 0 50px;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #ffcd58;
+  float: right;
+  margin-right: -15px;
+  margin-top: 0.7em;
+  position: relative;
+  z-index: 2;
+}
+
+.fr .circle {
+  float: left;
+  margin-left: -15px;
+}
+
+.circle.first:before,
+.circle.last:before {
+  content: " ";
+  position: absolute;
+  width: 3px;
+  left: 50%;
+  margin-bottom: 2px;
+  bottom: 100%;
+  height: 99em;
+  z-index: 3;
+  background: rgb(255, 255, 255);
+}
+
+.circle.last:before {
+  bottom: auto;
+  top: 65vh;
+}
+/*------------------------------------------Fourth section Page--------------------------------------------*/
+
+/*------------------------------------------Fifth section Page--------------------------------------------*/
+
+.marketplace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-color: #f8f9fa;
+}
+
+.head_plus_para {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 38%;
+  margin-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.head_plus_para h2 {
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.head_plus_para p {
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 15px;
 }
+
+.application {
+  display: grid;
+  grid-template-columns: repeat(10, 95px);
+  grid-template-rows: repeat(3, 110px);
+  column-gap: 1em;
+}
+
+.application img {
+  width: 38px;
+  height: 38px;
+}
+
+.buttons_market {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 100px 0;
+}
+
+.buttons_market button {
+  height: 40px;
+  width: 150px;
+  background-color: #ffcd58;
+  border: 0;
+  outline: none;
+  font-size: 0.938rem;
+  line-height: 2.375rem;
+}
+
+.buttons_market button:nth-child(2) {
+  border: 2px solid #ffcd58;
+  background-color: white;
+  width: 180px;
+}
+
+/*------------------------------------------Fifth section Page--------------------------------------------*/
+
+/*------------------------------------------Sixth section Page--------------------------------------------*/
+
+.feedback_boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 353px);
+  grid-template-rows: repeat(1, 216px);
+  gap: 20px;
+  padding: 100px 0 80px 0;
+  justify-content: center;
+}
+
+.feedback {
+  background-color: #f8f9fa;
+  border: 1px solid #e8e5de;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feedback p {
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+  color: #635e69;
+  font-family: "Lexend", sans-serif;
+}
+
+.feedback_person_details {
+  display: flex;
+  gap: 20px;
+  width: 95%;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+.feedback_person_details img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.name_and_role {
+  display: flex;
+  flex-direction: column;
+}
+
+.name_and_role .name {
+  font-size: 0.938rem;
+  line-height: 1.406rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+}
+
+.name_and_role .role {
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+}
+
+/*------------------------------------------Sixth section Page--------------------------------------------*/
+
+/*------------------------------------------Seventh section Page--------------------------------------------*/
+
+.container_of-start {
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  padding: 80px 0 80px 0;
+  border-bottom: 1px solid #e6e8ef;
+}
+
+.get_started {
+  width: 440px;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+
+.get_started h1 {
+  font-family: "Lexend", sans-serif;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button_for_start {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button_for_start button {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.938rem;
+  line-height: 2.375rem;
+  height: 40px;
+  width: 149px;
+  padding: 0 15px 0 15px;
+  border: 0;
+  outline: none;
+  background-color: #ffcd58;
+  font-weight: 400;
+}
+
+.button_for_start button:nth-child(2) {
+  border: 1px solid #ffcd58;
+  background-color: white;
+  width: 122.299px;
+}
+
+/*------------------------------------------Seventh section Page--------------------------------------------*/
+
+/*------------------------------------------------Footer----------------------------------------------------*/
+
+.footer {
+  background-color: #fafbfc;
+  padding: 45px;
+}
+
+.new_request {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.new_request img {
+  width: 25px;
+  height: 25px;
+}
+
+.new_request h3 {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.813rem;
+  line-height: 0.813rem;
+  font-weight: 400;
+  color: #147132;
+  background-color: #d8fbe0;
+  padding: 10px;
+  width: 222px;
+  height: 33.5px;
+  text-align: center;
+}
+
+.my-icon {
+  margin: 0 4.5px 0 0;
+}
+
+.footer_links_and_contact {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.footer_links {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+}
+
+.applications,
+.resources,
+.company {
+  padding: 10px;
+}
+
+.applications ul,
+.resources ul,
+.company ul {
+  list-style: none;
+}
+
+.applications ul li,
+.resources ul li,
+.company ul li {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.938rem;
+  line-height: 1.563rem;
+  font-weight: 500;
+  color: #595451;
+  margin-top: 10px;
+}
+
+.applications ul li:nth-child(1),
+.resources ul li:nth-child(1),
+.company ul li:nth-child(1) {
+  color: #121723;
+  font-size: 1rem;
+  line-height: 1rem;
+  padding: 25px 0 15px 0;
+  margin-top: 0;
+}
+
+.conatct {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.conatct h2 {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  color: #121723;
+}
+
+.input_and_submit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.input_and_submit button {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.813rem;
+  line-height: 0.813rem;
+  height: 33px;
+  width: 123.797px;
+  padding: 0 15px 0 15px;
+  border: 0;
+  outline: none;
+  background-color: #ffcd58;
+  font-weight: 500;
+}
+
+.input_and_submit .envelope-icon {
+  width: 13px;
+  height: 13px;
+}
+
+.input_and_submit input {
+  width: 302.195px;
+  height: 33px;
+  border: 1px solid #69727d;
+  padding: 4px 12px 4px 12px;
+  vertical-align: middle;
+}
+
+.input_and_submit input::placeholder {
+  font-size: 0.813rem;
+  line-height: 1.138rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+}
+
+.conatct h3 {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-family: "Lexend", sans-serif;
+  font-weight: 600;
+  color: #121723;
+}
+
+.conatct ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  margin-top: -10px;
+  gap: 8px;
+}
+
+.conatct ul li {
+  height: 40px;
+  width: 40px;
+}
+
+.conatct ul li .social-icon {
+  height: 20px;
+  width: 20px;
+  color: #595451;
+}
+
+.copyright {
+  border-top: 1px solid #e6e8ef;
+  margin: 20px 0 0 0;
+  padding: 20px 0 0 0;
+}
+
+.copyright h3 {
+  font-family: "Lexend", sans-serif;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  font-weight: 500;
+  text-align: left;
+  color: #747474;
+}
+/*------------------------------------------------Footer----------------------------------------------------*/
